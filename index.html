@@ -1,50 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Apple Music</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Music</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    Apple Music
-  </header>
+    <header>
+        <h1>Welcome to Apple Music</h1>
+    </header>
 
-  <section id="tabs">
-    <ul class="tabs-nav">
-      <li class="tab-link active" data-tab="tab-1">Главная</li>
-      <li class="tab-link" data-tab="tab-2">Поиск</li>
-      <li class="tab-link" data-tab="tab-3">Топ 50</li>
-    </ul>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#search">Search Music</a>
+        <a href="#top50">Top 50 Songs</a>
+    </nav>
 
-    <div class="tabs-content">
-      <div id="tab-1" class="tab-content active">
-        <h2>Добро пожаловать на Apple Music!</h2>
-        <p>Здесь вы найдёте любимую музыку и откроете новые хиты.</p>
-      </div>
-
-      <div id="tab-2" class="tab-content">
-        <h2>Поиск музыки</h2>
-        <p>Скоро здесь появится форма для поиска треков по названию.</p>
-      </div>
-
-      <div id="tab-3" class="tab-content">
-        <h2>Топ 50 песен</h2>
+    <div id="top50" class="container">
+        <h2>Top 50 Songs</h2>
         <ul class="song-list">
-  <li>1. Sabrina Carpenter – "Vicious"</li>
-  <li>2. Post Malone – "Chemical"</li>
-  <li>3. Billie Eilish – "What Was I Made For?"</li>
-  <li>4. Olivia Rodrigo – "Vampire"</li>
-  <li>5. Morgan Wallen – "Last Night"</li>
-  <li>6. Travis Scott – "K-POP"</li>
-  <li>7. The Weeknd – "Double Fantasy"</li>
-  <li>8. Lana Del Rey – "Say Yes to Heaven"</li>
-  <li>9. Doja Cat – "Paint The Town Red"</li>
-  <li>10. Beyoncé – "Cuff It"</li>
-  <li>11. Metro Boomin – "Creepin'"</li>
+            <li>1. Sabrina Carpenter – "Vicious"</li>
+            <li>2. Post Malone – "Chemical"</li>
+            <li>3. Billie Eilish – "What Was I Made For?"</li>
+            <li>4. Olivia Rodrigo – "Vampire"</li>
+            <li>5. Morgan Wallen – "Last Night"</li>
+            <li>6. Travis Scott – "K-POP"</li>
+            <li>7. The Weeknd – "Double Fantasy"</li>
+            <li>8. Lana Del Rey – "Say Yes to Heaven"</li>
+            <li>9. Doja Cat – "Paint The Town Red"</li>
+            <li>10. Beyoncé – "Cuff It"</li>
+            <li>11. Metro Boomin – "Creepin'"</li>
   <li>12. Shakira – "TQG"</li>
   <li>13. Ed Sheeran – "Eyes Closed"</li>
   <li>14. Harry Styles – "Late Night Talking"</li>
@@ -84,11 +70,11 @@
   <li>48. Lil Nas X – "Montero (Call Me By Your Name)"</li>
   <li>49. Rihanna – "Lift Me Up"</li>
   <li>50. Billie Eilish – "No Time to Die"</li>
-          </ul>
-      </div>
+        </ul>
     </div>
-  </section>
 
-  <script src="tabs.js"></script>
+    <footer>
+        <p>&copy; 2023 Apple Music. All rights reserved.</p>
+    </footer>
 </body>
 </html>
