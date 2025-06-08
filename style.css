@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background: #1db954;
+  padding: 10px;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.posters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.posters img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.posters img:hover {
+  transform: scale(1.1);
+}
+
+.search-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.search-section input {
+  padding: 10px;
+  width: 300px;
+}
+
+.search-section button {
+  padding: 10px;
+  background: #1db954;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.top-songs {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
