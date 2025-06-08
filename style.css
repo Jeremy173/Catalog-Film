@@ -1,70 +1,94 @@
+/* Основные стили для сайта */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #fff;
-  margin: 0;
-  padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #2c2c2c; /* Тёмный фон */
+    color: #f1f1f1; /* Светлый текст */
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 24px;
+    background-color: #3a3a3a; /* Темный оттенок для шапки */
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
 
-.tabs-nav {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  list-style: none;
-  padding: 0;
+nav {
+    background-color: #444; /* Тёмный фон для навигации */
+    padding: 10px 0;
+    text-align: center;
 }
 
-.tab-link {
-  cursor: pointer;
-  padding: 12px 24px;
-  margin: 0 10px;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+nav a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.tab-link:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.1);
+nav a:hover {
+    background-color: #f0a500; /* Тёплый цвет при наведении */
 }
 
-.tab-link.active {
-  background-color: #0071e3;
-  color: white;
+h1, h2 {
+    color: #f1f1f1;
 }
 
-.tabs-content {
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-  min-height: 200px;
-  padding: 20px;
+.song-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.tab-content {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
+.song-list li {
+    background-color: #555; /* Темный фон для песен */
+    color: #f1f1f1;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.tab-content.active {
-  display: block;
-  opacity: 1;
-  position: relative;
+.song-list li:hover {
+    background-color: #f0a500; /* Тёплый цвет при наведении на песню */
 }
 
-ul.song-list {
-  padding-left: 20px;
+button {
+    background-color: #f0a500; /* Тёплая кнопка */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1); /* Масштабирование кнопки при наведении */
+}
+
+button:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #333; /* Тёмный фон для подвала */
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+a:hover {
+    color: #f0a500;
 }
