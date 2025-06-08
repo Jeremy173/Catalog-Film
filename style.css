@@ -1,8 +1,9 @@
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fefefe;
+  color: #222;
   margin: 0;
-  font-family: sans-serif;
-  background-color: #121212;
-  color: #fff;
+  padding: 0;
 }
 
 nav ul {
