@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Apple Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="search.html">Поиск</a></li>
-      <li><a href="top50.html">Топ 50</a></li>
-    </ul>
-  </nav>
-
   <header>
-    <h1>Добро пожаловать в Apple Music!</h1>
-    <p>Найди любимую музыку легко</p>
+    Apple Music
   </header>
 
-  <section class="posters">
-    <img src="images/poster1.jpg" alt="Poster 1">
-    <img src="images/poster2.jpg" alt="Poster 2">
-    <img src="images/poster3.jpg" alt="Poster 3">
-    <!-- Добавь ещё -->
+  <section id="tabs">
+    <ul class="tabs-nav">
+      <li class="tab-link active" data-tab="tab-1">Главная</li>
+      <li class="tab-link" data-tab="tab-2">Поиск</li>
+      <li class="tab-link" data-tab="tab-3">Топ 50</li>
+    </ul>
+
+    <div class="tabs-content">
+      <div id="tab-1" class="tab-content active">
+        <h2>Добро пожаловать на Apple Music!</h2>
+        <p>Здесь вы найдёте любимую музыку и откроете новые хиты.</p>
+      </div>
+
+      <div id="tab-2" class="tab-content">
+        <h2>Поиск музыки</h2>
+        <p>Скоро здесь появится форма для поиска треков по названию.</p>
+      </div>
+
+      <div id="tab-3" class="tab-content">
+        <h2>Топ 50 песен</h2>
+        <ul class="song-list">
+          <!-- Вставь сюда песни, которые я тебе перечислял выше -->
+          <li>1. Sabrina Carpenter – Espresso</li>
+          <li>2. Billie Eilish – LUNCH</li>
+          <li>3. Post Malone & Morgan Wallen – I Had Some Help</li>
+          <!-- и так далее -->
+        </ul>
+      </div>
+    </div>
   </section>
+
+  <script src="tabs.js"></script>
 </body>
 </html>
